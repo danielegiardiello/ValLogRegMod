@@ -35,7 +35,7 @@ fit_lrm_ldh <- update(fit_lrm, . ~ . + lnldhst)
 ## C-index
 # Apparent validation
 val_rdata <- Hmisc::rcorr.cens(predict(fit_lrm),
-                               S = rdata$tum_res)
+                               S = rdata$tum_res )
 
 # External validation
 val_vdata <- Hmisc::rcorr.cens(
